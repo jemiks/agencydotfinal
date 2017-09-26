@@ -1,3 +1,9 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
 html,
 body {
     width: 100%;
@@ -5,6 +11,7 @@ body {
     background-color: #fff;
     font-family: 'Sansita', sans-serif;
 }
+
 
 .carousel-inner,
 .carousel,
@@ -203,10 +210,6 @@ item3.active h2 {
     transition: all 5s ease;
 }
 
-.item.item3 .carousel-desc {
-    text-align: left;
-}
-
 .item3.active h2.animated {
     visibility: visible;
     opacity: 1;
@@ -286,11 +289,49 @@ item3.active p {
     font-size: 20px;
 }
 
-.main-nav {
-    position: fixed;
-    background-color: rebeccapurple;
-    width: 50px;
-    height: 100%;
+
+.navcontainer{
     z-index: 1;
+    position: fixed;
+    width: 50px;
+    background-color: #ea0d31;
+    height: 100%;
+}
+
+
+.menu-icon{
+    margin-top: 24px;
+}
+
+.navmenu-lang{
+    margin-top: 15px;
+}
+
+.languages{
     text-align: center;
 }
+
+
+.menu-icon > .line {
+    background-color: #ffffff;
+    height: 4px;
+    width: 26px;
+    display: block;
+    border-radius: 2px;
+    list-style: none;
+    margin: 0 auto;
+    margin-bottom: 5px;
+
+
+}
+
+#navmenu{
+    display: flex;
+    justify-content: center;
+    margin-top: 85px;
+}
+
+.navmenu-item>li{
+    margin-bottom: 54px;
+}
+

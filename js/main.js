@@ -63,4 +63,8 @@ $(document).ready(function () {
         $('.item3 h2').animateCss('fadeInDown');
         $('.item3 p').animateCss('fadeIn');
     });
+    $("#navbtn").click(function () {
+        $("#navmenu").toggleClass("active");
+    });
 });
+
