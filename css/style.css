@@ -1,15 +1,31 @@
+@font-face {
+    font-family: 'BPG WEB 002';
+    src: url('../fonts/bpg-web-002/bpg-web-002-webfont.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/bpg-web-002/bpg-web-002-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/bpg-web-002/bpg-web-002-webfont.woff2') format('woff2'), /* Super Modern Browsers */ url('../fonts/bpg-web-002/bpg-web-002-webfont.woff') format('woff'), /* Pretty Modern Browsers */ url('../fonts/bpg-web-002/bpg-web-002-webfont.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/bpg-web-002/bpg-web-002-webfont.svg#bpg_web_002regular') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'BPG WEB 002 Caps';
+    src: url('../fonts/bpg-web-002-caps/bpg-web-002-caps-webfont.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/bpg-web-002-caps/bpg-web-002-caps-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/bpg-web-002-caps/bpg-web-002-caps-webfont.woff2') format('woff2'), /* Super Modern Browsers */ url('../fonts/bpg-web-002-caps/bpg-web-002-caps-webfont.woff') format('woff'), /* Pretty Modern Browsers */ url('../fonts/bpg-web-002-caps/bpg-web-002-caps-webfont.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/bpg-web-002-caps/bpg-web-002-caps-webfont.svg#bpg_web_002_capsregular') format('svg'); /* Legacy iOS */
+}
+
 * {
     margin: 0px;
     padding: 0px;
 }
-
 
 html,
 body {
     width: 100%;
     height: 100%;
     background-color: #fff;
-    font-family: 'Sansita', sans-serif;
+    font-family: sans-serif;
+}
+
+.container-fluid {
+    padding-right: 0px;
+    padding: 0px;
 }
 
 /*create carousel*/
@@ -247,10 +263,11 @@ item3.active p {
 }
 
 .carousel-desc-txt1 {
-    font-size: 30px;
+    font-size: 25px;
     color: #ffffff;
     display: flex;
     justify-content: center;
+    font-family: "BPG WEB 002 Caps", sans-serif;
 
 }
 
@@ -264,7 +281,8 @@ item3.active p {
     height: 40px;
     color: #ea082d;
     margin-top: 16px;
-    font-size: 21px;
+    font-size: 20px;
+    font-family: "BPG WEB 002", sans-serif;
     margin-bottom: 0;
 
 }
@@ -292,6 +310,7 @@ item3.active p {
     color: #ffffff;
     font-size: 20px;
     text-decoration: none;
+    font-family: "BPG Web 002", sans-serif;
 }
 
 .carousel-btn {
@@ -307,7 +326,7 @@ item3.active p {
 /*start nav*/
 
 .navcontainer {
-    z-index: 1;
+    z-index: 30;
     position: fixed;
     width: 50px;
     background-color: #ea0d31;
@@ -417,7 +436,12 @@ item3.active p {
     font-size: 20px;
     font-weight: bold;
     color: #fefefe;
+    font-family: "BPG WEB 002 Caps", sans-serif;
 
+}
+
+.section-center > p {
+    margin: 0 auto;
 }
 
 .section-img {
@@ -443,29 +467,29 @@ item3.active p {
     font-size: 20px;
     color: #ea082d;
     text-align: center;
+    font-family: "BPG Web 002", sans-serif;
 }
 
-.services-container{
+.services-container {
     display: flex;
     margin-top: 81px;
     justify-content: center;
-    margin-left: 120px ;
+    margin-left: 120px;
 }
 
-.main-services{
+.main-services {
     width: 1250px;
     height: auto;
 
 }
 
-.detail-service{
+.detail-service {
     width: 350px;
     display: inline-flex;
     flex-direction: column;
     margin: 20px;
     justify-content: center;
 }
-
 
 .service-icon {
     display: flex;
@@ -486,37 +510,29 @@ item3.active p {
     margin-bottom: 28px;
     border: 0;
     font-weight: bold;
+    font-family: "BPG WEB 002 Caps", sans-serif;
 
 }
 
-
-
-.service-button:hover{
+.service-button:hover {
     text-decoration: none;
     background-color: #4f4f4f;
     color: #fefefe;
 }
 
-.service-description {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
 .desc-inner {
-    width: 313px;
+    width: 300px;
     text-align: center;
     font-size: 16px;
 }
 
-.other-services{
+.other-services {
     display: flex;
     justify-content: center;
     margin-top: 65px;
 }
 
-.other-services input{
+.other-services input {
     border-color: #ea0d31;
     background-color: inherit;
     width: 344px;
@@ -524,41 +540,664 @@ item3.active p {
     font-size: 20px;
     font-weight: bold;
     color: #ea0d31;
+    font-family: "BPG WEB 002 Caps";
 }
 
-.other-services input:hover{
+.other-services input:hover {
     background-color: #ea0d31;
     color: #ffffff;
-    border: 0;
+    border: 1px solid #ea0d31;
+
 }
 
-.section-portfolio{
+.section-portfolio {
     margin-top: 87px;
 }
 
-.portfolio-container{
-    margin-top: 64px;
-    width: 1250px;
-    height: auto;
-    
+.portfolio-container {
+    display: flex;
+    margin-top: 81px;
+    justify-content: center;
 
 }
 
+.detail-portfolio > img {
+    width: 280px;
+    height: 280px;
+}
 
-.detail-portfolio{
+.main-portfolio {
+    width: 1360px;
+    height: auto;
+}
+
+.detail-portfolio {
     display: inline-flex;
     justify-content: center;
+    flex-direction: column;
     width: 280px;
     height: 280px;
-    margin-right: 114px;
-
+    margin: 20px;
+    margin-left: 114px;
+    position: relative;
 
 }
 
+.loop {
+    position: absolute;
+    overflow: hidden;
+    bottom: 24px;
+    background-color: #ea0d31;
+    width: 95px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.detail-portfolio :hover + .portfolio-txt .loop > a {
+    display: block;
+}
 
+.loop > img {
+    width: 40px;
+    height: 40px;
+}
 
-.detail-portfolio img{
-    width: 280px;
-    height: 280px;
+.loop > a {
+    text-decoration: none;
+    display: none;
+}
+
+.portfolio-txt {
+    position: absolute;
+    width: 200px;
+    text-align: center;
+    left: 40px;
+    bottom: 112px;
+    color: white;
+    display: none;
+
+}
+
+.portfolio-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+
+}
+
+.portfolio-btn > input {
+    width: 284px;
+    height: 48px;
+    background-color: #ea0d31;
+    border: 0;
+    font-size: 20px;
+    color: #fefefe;
+}
+
+.portfolio-btn > input:hover {
+    background-color: inherit;
+    color: #ea0d31;
+    border: 2px solid #ea0d31;
+    font-weight: bold;
+}
+
+.all-services {
+    background-image: url("../imgs/services-bgi.png");
+    height: 211px;
+    margin-top: 64px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.all-services-container {
+    margin-left: 114px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 13px;
+}
+
+.all-services-counter {
+    width: 119px;
+    height: 119px;
+    border-radius: 50%;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 64px;
+    color: #fefefe;
+    font-family: "BPG WEB 002 Caps", sans-serif;
+}
+
+.all-services-title {
+    width: 119px;
+    display: flex;
+    justify-content: center;
+    margin-top: 29px;
+    color: #fefefe;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "BPG WEB 002 Caps";
+}
+
+.team-container {
+    margin-top: 64px;
+}
+
+.team-title {
+    margin-top: 67px;
+    display: flex;
+}
+
+.team-title-start {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #ea0d31;
+    height: 48px;
+    padding-right: 64px;
+    font-size: 20px;
+    color: #fefefe;
+    font-weight: bold;
+    text-align: center;
+    font-family: "BPG WEB 002 Caps";
+}
+
+.team-title-end,
+.about-rating-content {
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ea082d;
+    font-size: 20px;
+    font-family: "BPG WEB 002";
+}
+
+.content-team {
+    display: flex;
+    justify-content: center;
+    margin-top: 157px;
+}
+
+.bg-border {
+    position: absolute;
+    width: 1010px;
+    height: 48px;
+    background-color: #ea0d31;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bg-border span {
+    font-weight: bold;
+    font-size: 36px;
+    color: #fefefe;
+}
+
+.worker-main {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    margin-right: 37px;
+}
+
+.worker-info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left: 28px;
+    margin-top: -50px;
+}
+
+.worker-img img {
+    width: 186px;
+    height: 166px;
+}
+
+.worker-position {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color: #070001;
+    font-family: "BPG WEB 002";
+}
+
+.worker-fname,
+.worker-lname {
+    text-align: center;
+    font-size: 20px;
+    color: #ea082d;
+    font-family: "BPG WEB 002";
+}
+
+.worker-soc-info {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+.worker-name {
+    margin-top: 29px;
+}
+
+.title-rating-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #ea0d31;
+    height: 48px;
+    padding-right: 64px;
+    font-size: 20px;
+    color: #fefefe;
+    font-weight: bold;
+    text-align: center;
+    font-family: "BPG WEB 002 Caps";
+}
+
+.user-info {
+    margin-left: 53px;
+}
+
+.user-feedback {
+    width: 856px;
+    display: flex;
+}
+
+.user-comment {
+    width: 455px;
+    font-size: 16px;
+    color: #414141;
+    font-family: "BPG WEB 002";
+}
+
+.user-content {
+    display: flex;
+    justify-content: center;
+    margin-top: 31px;
+}
+
+.user-img > img {
+    border-radius: 50%;
+}
+
+.user-name {
+    display: flex;
+    align-items: center;
+    color: #000000;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "BPG WEB 002";
+}
+
+.user-position {
+    font-size: 16px;
+    color: #464646;
+    font-weight: bold;
+    margin-bottom: 29px;
+    font-family: "BPG WEB 002";
+}
+
+.user-lname {
+    margin-left: 10px;
+}
+
+.rate-line {
+    display: flex;
+    justify-content: center;
+    margin-top: 14px;
+
+}
+
+.inner-line {
+    width: 1010px;
+    margin: 0 auto;
+    height: 48px;
+    background-color: #ea0d31;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 39px;
+
+}
+
+.page-news {
+    margin-top: 64px;
+
+}
+
+.news-title-start {
+    background-color: #b0b0b0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 48px;
+    font-size: 20px;
+    color: #fefefe;
+    padding-right: 64px;
+    font-family: "BPG WEB 002 Caps";
+}
+
+.news-title-end {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    font-size: 20px;
+    color: #ea082d;
+    font-family: "BPG WEB 002";
+
+}
+
+.news-container {
+    display: flex;
+    justify-content: center;
+    clear: both;
+
+}
+
+.news-inner-container {
+    width: 875px;
+    margin-top: 24px;
+    display: flex;
+}
+
+.main-info {
+    padding-left: 15px;
+
+}
+
+.news-header {
+    margin-top: 24px;
+}
+
+.news-title {
+    margin-top: 59px;
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 12px;
+    font-family: "BPG WEB 002 Caps";
+}
+
+.news-info {
+    font-size: 16px;
+    color: #545454;
+    font-family: "BPG WEB 002";
+    width: 233px;
+}
+
+.news-btn {
+    display: flex;
+    justify-content: center;
+    font-family: "BPG WEB 002 Caps";
+
+}
+
+.news-btn input {
+    width: 290px;
+    height: 39px;
+    font-size: 16px;
+    color: #ea0d31;
+    background-color: inherit;
+    border: 1px solid #ea0d31;
+    margin-top: 18px;
+}
+
+.news-btn input:hover {
+    background-color: #ea0d31;
+    color: #f7f7f7;
+}
+
+.inner-line-white {
+    background-color: #e6e6e6;
+    margin-top: 64px;
+    position: relative;
+}
+
+.sponsors-images {
+    position: absolute;
+    top: -12px;
+    display: flex;
+    align-items: center;
+    left: 55px;
+
+}
+
+.sponsors-image {
+    padding-left: 55px;
+    display: inline-block;
+}
+
+/*კონტაქტის ინფორმაცია*/
+.contact-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 105px;
+    flex-direction: row;
+}
+
+.contact-line {
+    width: 1010px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ea0d31;
+
+}
+
+.container-inner-container {
+    width: 1010px;
+}
+
+.contact-line p {
+    font-size: 20px;
+    color: #ea0d31;
+    font-weight: bold;
+    font-family: "BPG WEB 002 Caps";
+    margin: 0 auto;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-inner-info {
+    width: 900px;
+    display: flex;
+    margin-top: 66px;
+
+}
+
+.contacter-border input {
+    border: 0;
+    border-bottom: 2px solid #8d8d8d;
+    font-size: 16px;
+    color: #8d8d8d;
+    font-family: "BPG WEB 002";
+}
+
+.contacter-border {
+    margin-bottom: 32px;
+}
+
+.contacter-comment input[placeholder] {
+    width: 419px;
+    height: 100px;
+}
+
+.contacter-name input {
+    width: 135px;
+}
+
+.contacter-email input {
+    width: 94px;
+}
+
+.contacter-number input {
+    width: 192px;
+}
+
+.contacter-comment textarea {
+    width: 419px;
+    height: 80px;
+    text-align: center;
+    border: 0;
+    border-bottom: 2px solid #8d8d8d;
+    max-width: 419px;
+    min-width: 419px;
+    font-family: "BPG WEB 002";
+}
+
+.contacter-comment textarea[placeholder] {
+    text-align: start;
+    font-size: 16px;
+    color: #8d8d8d;
+}
+
+.contacter-btn {
+    margin-top: 30px;
+}
+
+.contacter-btn input {
+    width: 250px;
+    height: 50px;
+    background-color: #ea0d31;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fefefe;
+    border: 0;
+    font-family: "BPG WEB 002 Caps";
+}
+
+.contact-our-info {
+    margin-left: 50px;
+}
+
+.contact-our-map {
+    width: 480px;
+    height: 230px;
+}
+
+.address-container {
+    margin-top: 31px;
+}
+
+.main-address-detail,
+.main-address-emails,
+.main-address-numbers {
+    display: flex;
+    list-style: none;
+    font-size: 17px;
+    color: #8d8d8d;
+    font-family: "BPG WEB 002";
+}
+
+.address-city:after {
+    content: ',   ';
+    white-space: pre;
+}
+
+.company-emails:after {
+    content: '';
+    margin-left: 34px;
+}
+
+.company-numbers:after {
+    content: '';
+    margin-left: 31px;
+}
+
+.footer-container {
+    width: 100%;
+    height: 427px;
+    background: url("../imgs/footer-img.png") no-repeat center;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    position: relative;
+
+}
+
+.footer-inner:after {
+    content: "";
+    background-color: rgba(234, 13, 49, 0.7);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: 1;
+}
+
+.contact-header {
+    width: 100%;
+    height: 169px;
+    background: url("../imgs/contact-header.png") center no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-header-inner {
+    content: "";
+    background-color: rgba(59, 37, 37, 0.8);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: 1;
+}
+
+.contact-header-text {
+    font-size: 33px;
+    font-weight: bold;
+    font-family: "BPG WEB 002 Caps";
+    color: #ffffff;
+    z-index: 4;
+}
+
+.contact-container-resizing {
+    margin-top: 0
+}
+
+.main-logo {
+    position: absolute;
+    top: 19px;
+    left: 69px;
+    z-index: 3;
+}
+
+.footer-resizing {
+    margin-top: 115px;
+}
+
+.portfolio-works-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fefefe;
+    font-family: "BPG WEB 002 Caps";
+    width: 626px;
+    height: 48px;
+    background-color: #4f4f4f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-main-container {
+    width: 1050px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
 }
