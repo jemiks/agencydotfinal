@@ -41,6 +41,14 @@ body {
     margin: 0;
 }
 
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin: 0px;
+    max-height: 100%;
+}
+
 .slide-wrapper {
     display: inline;
 }
@@ -567,9 +575,8 @@ item3.active p {
 }
 
 .main-portfolio {
-    width: 1050px;
+    width: 1060px;
     height: auto;
-    margin-left: 114px;
     margin: 0 auto;
 }
 
@@ -579,10 +586,18 @@ item3.active p {
     flex-direction: column;
     width: 273px;
     height: 273px;
-    margin: 20px;
-
     position: relative;
+    margin-left: 111px;
+    margin-bottom: 42px;
 
+}
+
+.detail-portfolio:nth-child(3n+1) {
+    margin-left: 0;
+}
+
+.detail-portfolio:nth-child(3n) {
+    margin-right: 0;
 }
 
 .loop {
@@ -857,7 +872,7 @@ item3.active p {
 }
 
 .inner-line {
-    width: 1010px;
+    width: 1094px;
     margin: 0 auto;
     height: 48px;
     background-color: #ea0d31;
@@ -986,7 +1001,7 @@ item3.active p {
 }
 
 .contact-line {
-    width: 1010px;
+    width: 1094px;
     height: 48px;
     display: flex;
     justify-content: center;
@@ -996,7 +1011,7 @@ item3.active p {
 }
 
 .container-inner-container {
-    width: 1010px;
+    width: 1094px;
 }
 
 .contact-line p {
@@ -1206,14 +1221,14 @@ item3.active p {
 
 }
 
-.portfolio-content-btns{
+.portfolio-content-btns {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-top: 40px;
 }
 
-.portfolio-inner-btn{
+.portfolio-inner-btn {
     width: 300px;
     height: 48px;
     font-size: 20px;
@@ -1230,20 +1245,24 @@ item3.active p {
 
 }
 
-
-.portfolio-inner-btn span{
+.portfolio-inner-btn span {
     position: absolute;
     left: 42px;
     font-size: 40px;
     border-radius: 2px;
 }
 
-
-.portfolio-btn-large span{
+.portfolio-btn-large span {
     left: 21px;
 }
 
 .portfolio-content-main {
-display: flex;
+    display: flex;
     justify-content: center;
+    margin-top: 52px;
+}
+
+.detail-portfolio div:after{
+    content: '';
+    margin: 0;
 }
