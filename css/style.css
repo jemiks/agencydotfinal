@@ -567,18 +567,20 @@ item3.active p {
 }
 
 .main-portfolio {
-    width: 1360px;
+    width: 1050px;
     height: auto;
+    margin-left: 114px;
+    margin: 0 auto;
 }
 
 .detail-portfolio {
     display: inline-flex;
     justify-content: center;
     flex-direction: column;
-    width: 280px;
-    height: 280px;
+    width: 273px;
+    height: 273px;
     margin: 20px;
-    margin-left: 114px;
+
     position: relative;
 
 }
@@ -1182,22 +1184,66 @@ item3.active p {
     margin-top: 115px;
 }
 
-.portfolio-works-title {
+.portfolio-content {
+    width: 1050px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.portfolio-content-title {
     font-size: 20px;
     font-weight: bold;
     color: #fefefe;
-    font-family: "BPG WEB 002 Caps";
+    font-family: "BPG WEB 002 Caps", sans-serif;
     width: 626px;
     height: 48px;
     background-color: #4f4f4f;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
+    margin-top: 61px;
+
 }
 
-.portfolio-main-container {
-    width: 1050px;
-    margin: 0 auto;
+.portfolio-content-btns{
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.portfolio-inner-btn{
+    width: 300px;
+    height: 48px;
+    font-size: 20px;
+    font-family: "BPG WEB 002 Caps";
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    background-color: #4f4f4f;
+    color: #f7f7f7;
+    border: 0px;
+
+}
+
+
+.portfolio-inner-btn span{
+    position: absolute;
+    left: 42px;
+    font-size: 40px;
+    border-radius: 2px;
+}
+
+
+.portfolio-btn-large span{
+    left: 21px;
+}
+
+.portfolio-content-main {
+display: flex;
     justify-content: center;
 }
