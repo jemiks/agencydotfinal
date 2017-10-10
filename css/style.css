@@ -762,6 +762,7 @@ item3.active p {
     flex-direction: row;
     align-content: center;
     margin-right: 37px;
+    justify-content: center;
 }
 
 .worker-info {
@@ -1262,7 +1263,35 @@ item3.active p {
     margin-top: 52px;
 }
 
-.detail-portfolio div:after{
+.detail-portfolio div:after {
     content: '';
     margin: 0;
+}
+
+.main-team-section {
+    width: 1060px;
+    margin: 0 auto;
+    margin-top: 49px;
+
+}
+
+.main-team-title {
+    display: flex;
+    justify-content: center;
+}
+
+.team-title-inner {
+    width: 856px;
+    text-align: center;
+    font-size: 16px;
+    font-family: "BPG WEB 002";
+}
+
+.worker-info-reset {
+    margin-top: 0px;
+}
+
+.worker-main-resizing {
+    width: 1060px;
+    
 }
