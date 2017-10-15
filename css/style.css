@@ -15,6 +15,11 @@
     padding: 0px;
 }
 
+p {
+    margin: 0;
+    padding: 0px;
+}
+
 html,
 body {
     width: 100%;
@@ -710,6 +715,11 @@ item3.active p {
     display: flex;
 }
 
+.team-title-change{
+    display: block;
+
+}
+
 .team-title-start {
     display: flex;
     justify-content: flex-end;
@@ -933,7 +943,7 @@ item3.active p {
 }
 
 .news-header {
-    margin-top: 24px;
+    margin-top: 61px;
 }
 
 .news-title {
@@ -1309,17 +1319,12 @@ item3.active p {
     padding-bottom: 30px;
 }
 
-.service-right-info {
-    display: flex;
-}
-
 .inner-trapezoid {
     /*display: inline-block;*/
     vertical-align: top;
     -webkit-clip-path: polygon(0 22%, 120% 0, 120% 100%, 0 78%);
     clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
     background-color: #ea0d31;
-
 
 }
 
@@ -1334,9 +1339,107 @@ item3.active p {
 
 }
 
-.trapezoid-inner-main {
-/*position: absolute;*/
-    /*overflow: hidden;*/
-    /*right: 20px;*/
+.inner-left-trapezoid {
+    vertical-align: top;
+    -webkit-clip-path: polygon(0 22%, 120% 0, 120% 100%, 0 78%);
+    clip-path: polygon(0% 0%, 100% 0%, 91% 100%, 0% 100%);
+    background-color: #ea0d31;
 
+}
+
+.trapezoid-inner-main {
+    margin-top: 34px;
+}
+
+.service-info-trapezoid {
+    margin: 0px;
+    padding: 0px;
+}
+
+.service-inner-text {
+    width: 450px;
+}
+
+.trapezoid-title-logo {
+    margin-left: 26px;
+}
+
+.trapezoid-inner-title {
+    display: flex;
+}
+
+.trapezoid-title-text {
+    margin-left: 21px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    width: 100%;
+    height: 48px;
+}
+
+.trapezoid-title-text p {
+    font-size: 21px;
+    color: #ea0d31;
+    font-family: "BPG WEB 002 Caps";
+    font-weight: bold;
+    padding-left: 59px;
+}
+
+.about-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 41px;
+}
+
+.about-section-text {
+    color: #ffffff;
+    font-family: "BPG WEB 002";
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-align: end;
+    line-height: 40px;
+}
+
+.service-main-content {
+    margin-top: 71px;
+
+}
+
+
+.about-section-start {
+    text-align: start;
+}
+
+.service-info-text {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.service-right-text {
+    margin-top: 61px;
+    text-align: center;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.resizer-right-trapezoid{
+    /*display: inline-block; *!*/
+vertical-align: top;
+    -webkit-clip-path: polygon(0 22%, 120% 0, 120% 100%, 0 78%);
+    clip-path: polygon(6% 0%, 100% 0%, 100% 100%, 10% 100%);
+    background-color: #ea0d31;
+}
+
+.inner-text-resize {
+margin-top: 61px;
+}
+
+.service-right-info {
+display: flex;
+}
+
+.service-left-info{
+    display: flex;
 }
